@@ -1,0 +1,19 @@
+{
+  "name": "rain-settle-genlayer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Parametric crop cover settlement on GenLayer Studio Network.",
+  "scripts": {
+    "test": "python -m pytest tests/direct -q",
+    "build": "esbuild app/src.js --bundle --format=iife --minify --target=es2020 --outfile=app/bundle.js",
+    "deploy": "node scripts/deploy_studionet.js",
+    "e2e": "node scripts/e2e_studionet.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "genlayer-js": "1.1.8"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0"
+  }
+}

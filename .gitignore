@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+scripts/.rain-settle-keys.json
+scripts/.e2e-keys.json
+.env
+.env.*
+*.pem
+*.key
