@@ -1,0 +1,104 @@
+{
+  "address": "0xd305602Bd6ffd6200f7A9DFDd82829Df3042a424",
+  "result": "PASS - 2 payouts of 500 and 900 units; 1 no-trigger; 2 refusals; 9 transactions",
+  "stats": {
+    "payout_units": 1400,
+    "payouts": 2,
+    "policies": 4,
+    "readings": 3,
+    "settled_epochs": 2,
+    "triggered": 2
+  },
+  "readings": {
+    "rain-dry-2026": {
+      "bucket": "DRY",
+      "epoch": "2026-11",
+      "mm": 12,
+      "payout_units": 500,
+      "policy_id": "rain-dry-2026",
+      "read_at": 1795434339,
+      "requester": "0xd7f4db9670bb2c892e483b0bbd0a209da7e51a55",
+      "triggered": true
+    },
+    "rain-wet-2026": {
+      "bucket": "WET",
+      "epoch": "2026-11",
+      "mm": 168,
+      "payout_units": 900,
+      "policy_id": "rain-wet-2026",
+      "read_at": 1795434385,
+      "requester": "0xd7f4db9670bb2c892e483b0bbd0a209da7e51a55",
+      "triggered": true
+    },
+    "rain-normal-2026": {
+      "bucket": "NORMAL",
+      "epoch": "2026-11",
+      "mm": 74,
+      "payout_units": 0,
+      "policy_id": "rain-normal-2026",
+      "read_at": 1795434439,
+      "requester": "0xd7f4db9670bb2c892e483b0bbd0a209da7e51a55",
+      "triggered": false
+    }
+  },
+  "payouts": [
+    {
+      "bucket": "DRY",
+      "created_at": 1795434339,
+      "epoch": "2026-11",
+      "mm": 12,
+      "payout_id": "P-000001",
+      "policy_id": "rain-dry-2026",
+      "units": 500
+    },
+    {
+      "bucket": "WET",
+      "created_at": 1795434385,
+      "epoch": "2026-11",
+      "mm": 168,
+      "payout_id": "P-000002",
+      "policy_id": "rain-wet-2026",
+      "units": 900
+    }
+  ],
+  "txs": [
+    {
+      "label": "register_policy:rain-dry-2026",
+      "hash": "0x99b61a4bd38c285fc2c7adfaca4f03c2ade2ca914d15aae12244be9cff98db56"
+    },
+    {
+      "label": "register_policy:rain-wet-2026",
+      "hash": "0x9b61a3e6d340db98ae13a11af9288e58eac2539feeb6ad13b914ebf2e78f708f"
+    },
+    {
+      "label": "register_policy:rain-normal-2026",
+      "hash": "0xbcf248c8c8a4b1ab0c505362d7ba47c3bf00867d01332a3536f5bfd0e4979d89"
+    },
+    {
+      "label": "register_policy:rain-bad-2026",
+      "hash": "0x28bd7ed1baee4fb47a3b8e531cb761d8fed4cb0b6c268aefce48870e367c7979"
+    },
+    {
+      "label": "request_reading:rain-dry-2026",
+      "hash": "0xf92fa99deb809e962bcb281879e501035aac40146c642b76f5932929378fc953"
+    },
+    {
+      "label": "request_reading:rain-wet-2026",
+      "hash": "0xf25cc86a8a10e40c125a59785cfa73ed5f2b522d3cf118813edbf8faf1c3ec72"
+    },
+    {
+      "label": "request_reading:rain-normal-2026",
+      "hash": "0x3a61712b3c8f352466f19b2235a3ffdeb944f7528d1ae31735bc5df665ad38b8"
+    },
+    {
+      "label": "request_reading:rain-bad-2026",
+      "hash": "0x3ee47f67f1daf9fa45b8c8e32963deb5e780183cd5879d0205c7f5d66e310050"
+    },
+    {
+      "label": "request_reading:rain-dry-2026",
+      "hash": "0xb2df06457dfbda1df5b927d671aa6faaef0b8c3b05c59fac8dc514614ab806af"
+    }
+  ],
+  "recordedAt": "2026-11-23T11:53:17.622Z",
+  "note": "Stats and tx hashes are from the completed e2e run; reading and payout rows were read back from the live contract."
+}

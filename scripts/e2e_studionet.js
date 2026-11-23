@@ -14,8 +14,8 @@ const { createClient, createAccount, generatePrivateKey } = require("genlayer-js
 const { studionet } = require("genlayer-js/chains");
 
 const ROOT = path.resolve(__dirname, "..");
-const ARTIFACT = path.join(ROOT, "artifacts", "deploy.json");
-const OUT = path.join(ROOT, "artifacts", "e2e.json");
+const ARTIFACT = path.join(ROOT, "evidence", "deploy.json");
+const OUT = path.join(ROOT, "evidence", "e2e.json");
 const KEY_PATH = process.env.RS_KEYS || path.join(__dirname, ".rain-settle-keys.json");
 const keys = JSON.parse(fs.readFileSync(KEY_PATH, "utf8"));
 const deployInfo = JSON.parse(fs.readFileSync(ARTIFACT, "utf8"));

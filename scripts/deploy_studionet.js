@@ -17,7 +17,7 @@ const { studionet } = require("genlayer-js/chains");
 
 const ROOT = path.resolve(__dirname, "..");
 const KEY_PATH = path.join(__dirname, ".rain-settle-keys.json");
-const ARTIFACT = path.join(ROOT, "artifacts", "deploy.json");
+const ARTIFACT = path.join(ROOT, "evidence", "deploy.json");
 const SOURCE_PATH = path.join(ROOT, "contracts", "rain_settle.py");
 const EXPLORER = "https://explorer-studio.genlayer.com";
 

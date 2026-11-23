@@ -160,7 +160,7 @@ for `FINALIZED`, calls `stats()` to prove the contract executed, then:
 2. reads `genlayer code <address>` and compares the stripped CLI output with
    the local source byte for byte.
 
-The receipt is written to `artifacts/deploy.json`, including the deploy hash,
+The receipt is written to `evidence/deploy.json`, including the deploy hash,
 so evidence never depends on terminal scrollback.
 
 ## End-to-end run
@@ -174,12 +174,12 @@ Scenarios: a dry bulletin pays 500 units on drought cover; a wet bulletin
 pays 900 units on excess cover; a normal bulletin with excess cover pays
 nothing; a malformed bulletin is refused and stores no reading; a duplicate
 epoch is refused and adds no ledger entry. The script prints `RESULT:` and
-every transaction hash, and writes `artifacts/e2e.json`.
+every transaction hash, and writes `evidence/e2e.json`.
 
 ## Evidence transactions
 
 All hashes below were read back from a `FINALIZED` receipt during the e2e run
-and are stored in `artifacts/e2e.json`. "Refused" means the leader receipt
+and are stored in `evidence/e2e.json`. "Refused" means the leader receipt
 reported an execution error and a view read confirmed that no state changed.
 
 | Step | Outcome | Transaction |
@@ -230,7 +230,7 @@ contract.
 ```bash
 npm install
 npm run build                     # rebuild app/bundle.js from app/src.js
-node scripts/deploy_studionet.js  # or read artifacts/deploy.json
+node scripts/deploy_studionet.js  # or read evidence/deploy.json
 node scripts/e2e_studionet.js     # uses the deployed address
 ```
 
